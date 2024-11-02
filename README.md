@@ -1,0 +1,1 @@
+Made for the cpower project to move data from bitshake Smart Meter Reader to InfluxDB
