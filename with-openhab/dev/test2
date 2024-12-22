@@ -1,0 +1,70 @@
+UID: modbus:data:997978a137:ce4058cbbe
+label: Modbus prod_power_sf
+thingTypeUID: modbus:data
+configuration:
+  readValueType: uint16
+  readTransform:
+    - default
+  writeTransform:
+    - ""
+  readStart: "40084"
+  updateUnchangedValuesEveryMillis: 1000
+  writeMultipleEvenWithSingleRegisterOrCoil: false
+  writeMaxTries: 3
+bridgeUID: modbus:poller:997978a137:e024639c10
+channels:
+  - id: number
+    channelTypeUID: modbus:number-type
+    label: Value as Number
+    description: Number item channel
+    configuration: {}
+  - id: switch
+    channelTypeUID: modbus:switch-type
+    label: Value as Switch
+    description: Switch item channel
+    configuration: {}
+  - id: contact
+    channelTypeUID: modbus:contact-type
+    label: Value as Contact
+    description: Contact item channel
+    configuration: {}
+  - id: dimmer
+    channelTypeUID: modbus:dimmer-type
+    label: Value as Dimmer
+    description: Dimmer item channel
+    configuration: {}
+  - id: datetime
+    channelTypeUID: modbus:datetime-type
+    label: Value as DateTime
+    description: DateTime item channel
+    configuration: {}
+  - id: string
+    channelTypeUID: modbus:string-type
+    label: Value as String
+    description: String item channel
+    configuration: {}
+  - id: rollershutter
+    channelTypeUID: modbus:rollershutter-type
+    label: Value as Rollershutter
+    description: Rollershutter item channel
+    configuration: {}
+  - id: lastReadSuccess
+    channelTypeUID: modbus:last-successful-read-type
+    label: Last Successful Read
+    description: Date of last read
+    configuration: {}
+  - id: lastReadError
+    channelTypeUID: modbus:last-erroring-read-type
+    label: Last Erroring Read
+    description: Date of last read error
+    configuration: {}
+  - id: lastWriteSuccess
+    channelTypeUID: modbus:last-successful-write-type
+    label: Last Successful Write
+    description: Date of last write
+    configuration: {}
+  - id: lastWriteError
+    channelTypeUID: modbus:last-erroring-write-type
+    label: Last Erroring Write
+    description: Date of last write error
+    configuration: {}
