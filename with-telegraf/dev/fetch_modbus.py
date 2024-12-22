@@ -19,7 +19,7 @@ def to_signed(val, bits):
 
 client = ModbusTcpClient(ipaddress, port=1502)
 
-prod = client.read_holding_registers(40083, 2)
+prod = client.read_holding_registers(40093, 2)
 netz = client.read_holding_registers(40206, 5)
 storage = client.read_holding_registers(62836, 2)
 storage_percent = client.read_holding_registers(62852, 2)

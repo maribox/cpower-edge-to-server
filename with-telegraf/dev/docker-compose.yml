@@ -6,7 +6,7 @@ services:
     volumes:
       - influxdbv2_dev:/var/lib/influxdb2:rw
     ports:
-      - "8086:8086"
+      - "8087:8086"
   telegraf_dev:
     image: telegraf:1.32.2-alpine
     depends_on:
