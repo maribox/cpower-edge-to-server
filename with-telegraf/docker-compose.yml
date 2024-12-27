@@ -1,6 +1,6 @@
 services:
   influxdb:
-    restart: always
+    #restart: always
     image: influxdb:2.7.10-alpine
     env_file:
       - influxv2.env
