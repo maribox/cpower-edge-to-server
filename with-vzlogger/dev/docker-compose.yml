@@ -1,0 +1,24 @@
+services:
+  vzlogger:
+    container_name: vzlogger
+    image: vzlogger:latest
+    volumes:
+      - ./vzlogger.conf:/etc/vzlogger.conf:ro
+      - ./logs:/var/log/vzlogger
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+  data-bridge:
+    container_name: data-bridge
+    build:
+      context: ./data-bridge
+    env_file: # specifies the USER_ID and REMOTE_SERVER_URL, so docker compose can be published
+      - .env.example
+    environment:
+      - INTERVAL=6000
+      - VZLOGGER_URL=http://vzlogger:8081
+    depends_on:
+      - vzlogger
+    restart: unless-stopped

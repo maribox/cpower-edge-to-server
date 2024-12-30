@@ -2,7 +2,7 @@ services:
   openhab:
     image: "openhab/openhab:4.3.0-alpine"
     container_name: openhab-dev
-    restart: always
+    restart: unless-stopped
     network_mode: host
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
