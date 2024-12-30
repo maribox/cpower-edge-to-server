@@ -1,0 +1,112 @@
+[Dec 27 18:34:54][main] vzlogger v0.8.8 based on heads/master-0-gaf591ccecb-dirty from Mon, 16 Dec 2024 22:29:26 +0100 started.
+[Dec 27 18:34:54]       New meter initialized (protocol=sml)
+[Dec 27 18:34:54][chn0] New channel initialized (uuid=...6d826b api=volkszaehler id=1-0:1.8.0)
+[Dec 27 18:34:54][main] log level is 5
+[Dec 27 18:34:54]       Process not daemonized...
+[Dec 27 18:34:54][mtr0] Meter connection established
+[Dec 27 18:34:54][http] Starting local interface HTTPd on port 8081
+[Dec 27 18:34:54][chn0] api volkszaehler requires parameter "middleware" but it's missing!
+[Dec 27 18:34:58][main] vzlogger v0.8.8 based on heads/master-0-gaf591ccecb-dirty from Mon, 16 Dec 2024 22:29:26 +0100 started.
+[Dec 27 18:34:58]       New meter initialized (protocol=sml)
+[Dec 27 18:34:58][chn0] New channel initialized (uuid=...6d826b api=volkszaehler id=1-0:1.8.0)
+[Dec 27 18:34:58][main] log level is 5
+[Dec 27 18:34:58]       Process not daemonized...
+[Dec 27 18:34:58][mtr0] Meter connection established
+[Dec 27 18:34:58][http] Starting local interface HTTPd on port 8081
+[Dec 27 18:34:58][chn0] api volkszaehler requires parameter "middleware" but it's missing!
+[Dec 27 18:35:00][main] vzlogger v0.8.8 based on heads/master-0-gaf591ccecb-dirty from Mon, 16 Dec 2024 22:29:26 +0100 started.
+[Dec 27 18:35:00]       New meter initialized (protocol=sml)
+[Dec 27 18:35:00][chn0] New channel initialized (uuid=...6d826b api=volkszaehler id=1-0:1.8.0)
+[Dec 27 18:35:00][main] log level is 5
+[Dec 27 18:35:00]       Process not daemonized...
+[Dec 27 18:35:00][mtr0] Meter connection established
+[Dec 27 18:35:00][http] Starting local interface HTTPd on port 8081
+[Dec 27 18:35:00][chn0] api volkszaehler requires parameter "middleware" but it's missing!
+[Dec 27 18:35:02][main] vzlogger v0.8.8 based on heads/master-0-gaf591ccecb-dirty from Mon, 16 Dec 2024 22:29:26 +0100 started.
+[Dec 27 18:35:02]       New meter initialized (protocol=sml)
+[Dec 27 18:35:02][chn0] New channel initialized (uuid=...6d826b api=volkszaehler id=1-0:1.8.0)
+[Dec 27 18:35:02][main] log level is 5
+[Dec 27 18:35:02]       Process not daemonized...
+[Dec 27 18:35:02][mtr0] Meter connection established
+[Dec 27 18:35:02][http] Starting local interface HTTPd on port 8081
+[Dec 27 18:35:02][chn0] api volkszaehler requires parameter "middleware" but it's missing!
+[Dec 27 18:38:04][main] vzlogger v0.8.8 based on heads/master-0-gaf591ccecb-dirty from Mon, 16 Dec 2024 22:29:26 +0100 started.
+[Dec 27 18:38:04]       New meter initialized (protocol=sml)
+[Dec 27 18:38:04][chn0] New channel initialized (uuid=...6d826b api=null id=1-0:1.8.0)
+[Dec 27 18:38:04][main] log level is 5
+[Dec 27 18:38:04]       Process not daemonized...
+[Dec 27 18:38:04][mtr0] Meter connection established
+[Dec 27 18:38:04][http] Starting local interface HTTPd on port 8081
+[Dec 27 18:38:05][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:05][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:05][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:05][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:06][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:06][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:06][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:06][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:07][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:07][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:07][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:07][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:08][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:08][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:08][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:08][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:09][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:09][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:09][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:09][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:10][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:10][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:10][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:10][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:11][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:11][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:11][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:11][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:12][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:12][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:12][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:12][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:13][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:13][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:13][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:13][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:14][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:14][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:14][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:14][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:15][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:15][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:15][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:15][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:16][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:16][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:16][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:16][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:17][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:17][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:17][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:17][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:18][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:18][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:18][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:18][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:19][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:19][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:19][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:19][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:20][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:20][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:20][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:20][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:21][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:21][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:21][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:21][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:22][mtr0] meter returned readings with a timestamp before 1990, IGNORING.
+[Dec 27 18:38:22][mtr0] most likely your meter is misconfigured,
+[Dec 27 18:38:22][mtr0] for sml meters, set `"use_local_time": true` in vzlogger.conf (meter section),
+[Dec 27 18:38:22][mtr0] to override this check, set `"i_have_a_time_machine": true` in vzlogger.conf.
+[Dec 27 18:38:22][]     main loop indicating all mappings to quit
