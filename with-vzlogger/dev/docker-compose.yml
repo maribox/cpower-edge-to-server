@@ -19,6 +19,6 @@ services:
     environment:
       - INTERVAL=6000
       - VZLOGGER_URL=http://vzlogger:8081
-    depends_on:
-      - vzlogger
+    #depends_on:
+    #  - vzlogger
     restart: unless-stopped

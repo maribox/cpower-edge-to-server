@@ -15,10 +15,15 @@ async function fetchAndForward() {
     console.log("Fetched data:", data);
     let powerInWatts = data.data.find(entry => entry.uuid === POWER_UUID);
     
+    let body = JSON.stringify({
+      "power_in_w" : powerInWatts,
+      "user_id": USER_ID,
+    })
+
     const postResponse = await fetch(REMOTE_SERVER_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: ,
+      body: body,
     });
 
     if (!postResponse.ok) {
