@@ -3,9 +3,8 @@ services:
     container_name: inverter-bridge
     build:
       context: ./inverter-bridge
-    env_file: # specifies the USER_ID and REMOTE_SERVER_URL, so docker compose can be published
+    env_file: # specifies the USER_ID, REMOTE_SERVER_URL and INVERTER_ADDRESS, so docker compose can be published
       - .env
     environment:
       - INTERVAL=60000
-      - INVERTER_ADDRESS=192.168.0.123
     restart: unless-stopped

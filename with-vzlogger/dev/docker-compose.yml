@@ -9,16 +9,25 @@ services:
       - /dev/ttyUSB0:/dev/ttyUSB0
     ports:
       - "8081:8081"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
     restart: unless-stopped
   data-bridge:
     container_name: data-bridge
     build:
       context: ./data-bridge
     env_file: # specifies the USER_ID and REMOTE_SERVER_URL, so docker compose can be published
-      - .env.example
+      - .env
     environment:
-      - INTERVAL=6000
+      - INTERVAL=60000
       - VZLOGGER_URL=http://vzlogger:8081
-    #depends_on:
-    #  - vzlogger
+      - POWER_UUID=45b0a2ff-7b3e-4607-a837-3e6f6f225629
+    depends_on:
+     - vzlogger
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
     restart: unless-stopped

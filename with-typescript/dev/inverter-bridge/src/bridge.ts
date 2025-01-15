@@ -35,10 +35,10 @@ async function fetchAndForward() {
     }
     
     console.log("Fetched data:", data.Body.Data);
-    let powerInWatts = Number(data.Body.Data["0"]!!.PowerReal_P_Sum)
+    let powerInWattsIntoHome = Number(data.Body.Data["0"]!!.PowerReal_P_Sum)
     
     let body = JSON.stringify({
-      "power_in_w" : powerInWatts,
+      "power_in_w" : -powerInWattsIntoHome,
       "user_id": USER_ID,
     })
 
