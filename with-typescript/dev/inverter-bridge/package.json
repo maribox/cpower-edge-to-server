@@ -1,0 +1,25 @@
+{
+  "name": "inverter-bridge",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:ts": "tsc --noEmit",
+    "build": "tsc",
+    "start": "pnpm build && pnpm node dist/bridge.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "openapi-typescript": "^7.5.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "openapi-fetch": "^0.13.4",
+    "zod": "^3.24.1"
+  }
+}
