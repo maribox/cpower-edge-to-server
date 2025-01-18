@@ -20,14 +20,16 @@ const { REMOTE_SERVER_URL, USER_ID, INVERTER_ADDRESS, INTERVAL } = parsedEnv.dat
 
 const client = createClient<paths>({ baseUrl: `http://${INVERTER_ADDRESS}` });
 
+const REMOTE_ENDPOINT = `${REMOTE_SERVER_URL}/api/power`
+
 async function fetchAndForward() {
   try {
     const {
       data, 
       error,
-    } = await client.GET("/solar_api/v1/GetMeterRealtimeData.cgi", {
+    } = await client.GET("/solar_api/v1/GetPowerFlowRealtimeData.fcgi", {
       params: {
-        "query": { "Scope": "System"},
+        
       },
     });
     if (error) {
@@ -35,14 +37,19 @@ async function fetchAndForward() {
     }
     
     console.log("Fetched data:", data.Body.Data);
-    let powerInWattsIntoHome = Number(data.Body.Data["0"]!!.PowerReal_P_Sum)
-    
+    //let powerInWattsIntoHome = Number(data.Body.Data["0"]!!.PowerReal_P_Sum)
+    // used power in Home:
+    // @ts-ignore
+    //let powerInWattsIntoHome = Number(data.Body.Data["PAC"]["Values"]["1"])
+    let load = Number(data.Body.Data.Site.P_Load)
     let body = JSON.stringify({
-      "power_in_w" : -powerInWattsIntoHome,
+      "power_in_w" : load,
       "user_id": USER_ID,
     })
 
-    const postResponse = await fetch(REMOTE_SERVER_URL, {
+    console.log(`Sending POST request ${body} to ${REMOTE_ENDPOINT}`);
+
+    const postResponse = await fetch(REMOTE_ENDPOINT, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: body,
