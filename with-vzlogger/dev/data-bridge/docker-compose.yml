@@ -1,0 +1,16 @@
+services:
+  data-bridge:
+    container_name: data-bridge
+    build:
+      context: .
+    env_file: # specifies the USER_ID and REMOTE_SERVER_URL, so docker compose can be published
+      - .env
+    environment:
+      - INTERVAL=60000
+      - VZLOGGER_URL=http://172.17.0.1:8081
+      - POWER_UUID=45b0a2ff-7b3e-4607-a837-3e6f6f225629
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    restart: always

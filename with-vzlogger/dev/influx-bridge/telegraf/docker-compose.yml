@@ -1,0 +1,21 @@
+services:
+  telegraf:
+    container_name: telegraf
+    image: telegraf:1.32.2-alpine
+    environment:
+      - DATA_FETCH_INTERVAL=10s
+      - DATA_PUSH_INTERVAL=30s
+      - VZLOGGER_ADDRESS=172.17.0.1:8081
+      - VZLOGGER_JSON_PATH_FED_IN=data.#(uuid==\"c5350e5b-59dd-41b2-8926-05e9205b9622\").tuples.0.1
+      - VZLOGGER_JSON_PATH_GOT_OUT=data.#(uuid==\"bda498d7-8b3e-4270-8148-4fa1b2ad538b\").tuples.0.1
+      - VZLOGGER_JSON_PATH_POWER=data.#(uuid==\"45b0a2ff-7b3e-4607-a837-3e6f6f225629\").tuples.0.1
+      # This is dependent on the POWER_UUID value in vzlogger's docker compose / vzlogger.conf
+    env_file:
+      - .env
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    restart: always

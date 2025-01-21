@@ -1,0 +1,18 @@
+services:
+  influxdb:
+    container_name: influxdb
+    image: influxdb:2.7.10-alpine
+    env_file:
+      - .env
+    volumes:
+      - influxdbv2:/var/lib/influxdb2:rw
+    ports:
+      - "8086:8086"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    restart: unless-stopped
+      
+volumes:
+  influxdbv2:
