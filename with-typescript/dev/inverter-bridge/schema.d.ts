@@ -796,6 +796,8 @@ export interface components {
         };
         T_PowerFlowRealtimeData: {
             inverters: components["schemas"]["T_inverters"];
+            // manually corrected:
+            Site: components["schemas"]["T_Site"];
         };
         T_inverters: {
             1: components["schemas"]["T_1_Powerflow"];
